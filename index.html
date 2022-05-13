@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio</title>
+  <link rel="stylesheet" href="./app/assets/css/index.css" />
+  <link rel="shortcut icon" href="./app/assets/img/Favicon_Lettsar.png" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/bee4216bbc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section class="g-conteiner" id="conteiner">
+    <header class="conteiner-header">
+      <img src="./app/assets/img/LogoLettsar-01.png" alt="" class="c_header-logo" />
+      <nav class="c_header-nav">
+        <a href="#/">Inicio</a>
+        <a href="#/experience">Experiencia Laboral</a>
+        <a href="#/training">Capacitaciones</a>
+        <a href="#/contact">Contacto</a>
+      </nav>
+      <div class="c_header-mnu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+    <section class="conteiner-description" id="root">
+
+      </div>
+    </section>
+    <section class="conteiner-content" id="c_content">
+      <div class="card">
+        <a href="#/frontend">
+          <img src="./app/assets/img/Card-1.jpg" alt="" />
+          <div class="card-footer">
+            <i class="fa-solid fa-laptop-code"></i>
+            <p>Desarrollador Frontend</p>
+          </div>
+      </div>
+      </a>
+      <div class="card">
+        <a href="#/disenografico">
+          <img src="./app/assets/img/Card-2.jpg" alt="" />
+          <div class="card-footer">
+            <i class="fa-solid fa-pen-nib"></i>
+            <p>Diseño Grafico UI</p>
+          </div>
+      </div>
+      </a>
+      <div class="card">
+        <a href="#/gestionti">
+
+          <img src="./app/assets/img/Card-3.jpg" alt="" />
+          <div class="card-footer">
+            <i class="fa-solid fa-computer"></i>
+            <p>Gestion TI</p>
+          </div>
+      </div>
+      <div class="c_content-line">
+        <i class="fa-solid fa-graduation-cap"><span>Habilidades</span></i>
+      </div>
+      </a>
+    </section>
+    <section class="conteiner-app">
+      <div class="Postcard">
+        <div class="postcard-img">
+          <img src="./app/assets/img/spotify.jpg" alt="" />
+          <div class="Postcard-footer">
+            <i class="fa-brands fa-spotify"></i>
+            <p>API Spootify</p>
+          </div>
+        </div>
+        <p>
+          En esta Sección se implementa el consumo con la API Spotify,
+          conectando con el servicio de música, pódcasts y vídeos digitales
+          que te da acceso a millones de canciones y a otro contenido de
+          creadores de todo el mundo
+        </p>
+      </div>
+      <div class="Postcard">
+        <div class="postcard-img">
+          <img src="./app/assets/img/marvel.jpg" alt="" />
+          <div class="Postcard-footer">
+            <i class="fa-solid fa-film"></i>
+            <p>API Marvel</p>
+          </div>
+        </div>
+        <p>
+          En esta Sección se implementa el consumo con la API de Marvel Comics
+          conectando a los desarrolladores de todo el mundo acceder a
+          información sobre la amplia biblioteca de cómics de Marvel, desde lo
+          que está por venir hasta hace 70 años.
+        </p>
+
+      </div>
+      <div class="c_app-line">
+        <i class="fa-solid fa-server"><span>Consumo de API</span></i>
+      </div>
+    </section>
+    <section class="conteiner-footer">
+      <div class="c_footer-favicon-content">
+        <img class="c_footer-favicon-img" src="./app/assets/img/Favicon_Lettsar.png" alt="lettsar" />
+      </div>
+      <div class="num-footer">
+        <a href="https://bit.ly/3xPDAt1" target="_blank"><i class="fa-brands fa-whatsapp"> +591 69241091</i></a>
+      </div>
+    </section>
+  </section>
+  <script>
+    const resizeDt = () => {
+      const nav = document.querySelector("nav");
+      const mnu = document.querySelector(".c_header-mnu");
+
+      if (screen.width <= 768 || window.outerWidth <= 768) {
+        if (nav.classList.contains("c_header-nav")) {
+          nav.classList.replace("c_header-nav", "c_header-nav-mobile");
+          mnu.style.display = "block";
+        }
+      }
+      if (screen.width > 768 || window.outerWidth > 768) {
+        nav.classList.replace("c_header-nav-mobile", "c_header-nav");
+        mnu.style.display = "none";
+      }
+    };
+
+    window.addEventListener("resize", resizeDt);
+    document.addEventListener("DOMContentLoaded", (e) => {
+      resizeDt();
+    });
+  </script>
+  <script src="./app/index.js" type="module"></script>
+</body>
+
+</html>
