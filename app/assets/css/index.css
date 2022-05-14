@@ -156,17 +156,11 @@ html {
   width: 200px!important;
   
 }
-
-
 .desc-article p{
   text-align: justify;
   line-height: 1.5rem;
   padding: 20px 100px 10px 100px;
 }
-
-
-
-
 .c_description-content {
   display: flex;  
   width: 70%;
@@ -176,7 +170,6 @@ html {
   padding-top: 20px;
   color: var(--Title-color);
 }
-
 .c_desc_content-img {
   position: relative;
   display: flex;
@@ -188,15 +181,19 @@ html {
   width: 200px;
   height: 210px;
 }
-.c_desc_content-text {
+.c_desc_content-text,
+.c_desc_content-text_sub
+ {
   width: 70%;
   margin-top: 10px;
   line-height: 1.5rem;
-  text-align: justify;
-  
+  text-align: justify;  
   padding: 10px;
 }
 
+.c_desc_content-text  i{
+  text-align: center;
+}
 .c_description-content h1 {
   padding-bottom: 5px;
 }
@@ -220,7 +217,7 @@ html {
   
 }
 .cont_art_cap{
-  width: 90%;
+  width: 80%;
   
   display: flex;
   flex-wrap: wrap;
@@ -246,8 +243,9 @@ html {
   text-align: center;
 }
 .business{
-  width: 30%;
+  width: calc(30% - 20px);
   text-align: center;
+  margin-right: 20px;
 }
 
 .business img{
@@ -268,7 +266,7 @@ html {
   line-height: 1.5;
 }
 .exp{
-  width: 70%;
+  width: calc(70% - 20px);
   
 }
 
@@ -556,17 +554,23 @@ html {
   .c_description-content {
     display: block;
   }
+  .article-expe{
+    width: 100%;
+  }
 
-  .c_desc_content-text{
+  .c_desc_content-text,
+  .c_desc_content-text_sub{
      width: 100%;
-     text-align: center;
+     
+  }
+  .c_desc_content-text_sub{
+    text-align: center;
   }
 
 
-.desc-article img {
-
+/* .desc-article img {
   width: 100%;
-}
+} */
 
   .conteiner-app .card {
     height: 250px;
@@ -629,12 +633,29 @@ html {
     display: flex;
     flex-wrap: wrap;
   }
+
+  .article-expe{
+    display: block;
+  }
+  .exp {
+    width: 100%;
+   
+}
+.exp ul li {
+  
+  margin-left: 20px;
+}
+  .business {
+    width: 100%;    
+    margin-right: 0px;
+}
   .progress{
     min-width: 100%;  
     }
     .cont_art_cap{
       display: block;
     }
+    
     .article-cap{
       width: 100%;
     }
