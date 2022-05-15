@@ -74,7 +74,7 @@ export async function Router(props){
         })
     
     
-    $root.appendChild(barprogress(dat))
+    /* $root.appendChild(barprogress(dat)) */
        
     }else if(hash==="#/disenografico"){
         await   ajax({
