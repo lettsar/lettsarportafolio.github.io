@@ -227,12 +227,12 @@ html {
   margin-top: 20px;
   width: calc(100% - 50%);  
   position: relative;
-  cursor: pointer;
+  cursor: pointer;     
+  padding: 0px 0px 2px 2px;
   
-  transition: background-color,width 15s;
-
 
 }
+
 
 .article-cap:hover .exp::after{
 content: "Ver Certificado";
