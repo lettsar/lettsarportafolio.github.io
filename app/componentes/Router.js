@@ -1,5 +1,7 @@
 import{ajax} from '../helpers/ajax.js'
 import { barprogress } from './barProgress.js';
+import { searchClick } from './searchClick.js';
+
 const d=document;
 const $conteiner = d.getElementById("conteiner") ;
 const $conteinerapp = d.querySelector(".conteiner-app");
@@ -12,29 +14,26 @@ let $url = props;
 if($url === "#/" || $url === ""){
     $conteiner.classList.replace("g-conteiner-sec","g-conteiner");
     $conteinerapp.style.display="flex";
-    $conteinercontent.style.display="flex";
-    
+    $conteinercontent.style.display="flex";   
 
 }else{
-
 $conteiner.classList.replace("g-conteiner","g-conteiner-sec");
 $conteinerapp.style.display="none";
 $conteinercontent.style.display="none";
 }
 } 
-
+searchClick()
 //Segun URL renderizamos el Contenido
 export async function Router(props){
     let {hash}= location;
   
-    searchquery(hash)
-   
+    searchquery(hash)  
    
   if(!hash || hash==="#/"|| hash ==" "){     
     await ajax({
         url:'app/assets/recursoHtml/habilidad-home.html',
         CbSuccess: res=>{
-            console.log(res)
+          
             console.log(hash)
             $root.innerHTML=null;
             $root.innerHTML=res;                
@@ -46,7 +45,7 @@ export async function Router(props){
         await  ajax({
             url:'app/assets/recursoHtml/habilidad-experiencia.html',
             CbSuccess: res=>{
-                console.log(res)
+              
                 $root.innerHTML=null;
                 $root.innerHTML=res;
             }
@@ -55,7 +54,7 @@ export async function Router(props){
         await   ajax({
             url:'app/assets/recursoHtml/habilidad-capacitaciones.html',
             CbSuccess: res=>{
-                console.log(res)
+              
                 $root.innerHTML=null;
                 $root.innerHTML=res;                
                
@@ -66,7 +65,7 @@ export async function Router(props){
         await   ajax({
             url:'app/assets/recursoHtml/habilidad-frontend.html',
             CbSuccess: res=>{
-                console.log(res)
+            
                 $root.innerHTML=null;
                 $root.innerHTML=res;                
                
@@ -80,7 +79,7 @@ export async function Router(props){
         await   ajax({
             url:'app/assets/recursoHtml/habilidad-disenografico.html',
             CbSuccess: res=>{
-                console.log(res)
+           
                 $root.innerHTML=null;
                 $root.innerHTML=res;                
                
@@ -90,7 +89,7 @@ export async function Router(props){
         await   ajax({
             url:'app/assets/recursoHtml/habilidad-gestionti.html',
             CbSuccess: res=>{
-                console.log(res)
+            
                 $root.innerHTML=null;
                 $root.innerHTML=res;                
                
@@ -100,7 +99,7 @@ export async function Router(props){
         await   ajax({
             url:'app/assets/recursoHtml/habilidad-contacto.html',
             CbSuccess: res=>{
-                console.log(res)
+              
                 $root.innerHTML=null;
                 $root.innerHTML=res;                
                

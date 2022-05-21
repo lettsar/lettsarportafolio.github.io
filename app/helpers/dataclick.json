@@ -1,0 +1,24 @@
+{
+  "btn-url-cap": [
+    {
+      "data-link": "html01",
+      "alink": "html_desde_cero.png"
+    },
+    {
+      "data-link": "javascript01",
+      "alink": "javascript_desde_cero.png"
+    },
+    {
+      "data-link": "javascript02",
+      "alink": "JavaScript desde Cero_22hrs.png"
+    },
+    {
+      "data-link": "Programación Orientada a Objetos JavaScript",
+      "alink": "programacion_orientada_objeto.png"
+    },
+    {
+      "data-link": "Flexbox y Grid",
+      "alink": "Flexbox_Grid.png"
+    }
+  ]
+}
