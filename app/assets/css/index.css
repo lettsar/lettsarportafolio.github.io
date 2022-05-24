@@ -213,17 +213,17 @@ html {
 }
 .cont_art_cap {
   width: 80%;
-
-  display: flex;
+  display: flex; 
   flex-wrap: wrap;
+  
 }
 .article-cap {
   min-width: calc(100% - 50%);
   margin-top: 20px;
   width: calc(100% - 50%);
   position: relative;
-  cursor: pointer;
-  padding: 0px 0px 2px 2px;
+  cursor: pointer; 
+  padding-right: 10px;
 }
 
 .article-cap:hover .exp::after {
@@ -235,15 +235,16 @@ html {
   background-color: #002b49;
   border-radius: 0px 10px 10px 0px;
 }
-.capacitacion {
+.article-cap {
   text-align: justify;
   line-height: 1.5rem;
   text-align: center;
 }
-.capacitacion p {
+.article-cap p {
   text-align: justify;
   line-height: 1.5rem;
   padding: 0px !important;
+  
 }
 .business p {
   padding: 0 !important;
@@ -669,7 +670,7 @@ html {
   .article-cap {
     width: 100%;
   }
-  .capacitacion p {
+  .article-cap p {
     text-align: initial;
   }
 

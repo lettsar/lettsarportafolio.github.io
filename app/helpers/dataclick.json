@@ -1,24 +1,28 @@
 {
   "btn-url-cap": [
     {
-      "data-link": "html01",
+      "id": "C01",
       "alink": "html_desde_cero.png"
     },
     {
-      "data-link": "javascript01",
+      "id": "C02",
       "alink": "javascript_desde_cero.png"
     },
     {
-      "data-link": "javascript02",
+      "id": "C3",
       "alink": "JavaScript desde Cero_22hrs.png"
     },
     {
-      "data-link": "Programación Orientada a Objetos JavaScript",
+      "id": "C04",
       "alink": "programacion_orientada_objeto.png"
     },
     {
-      "data-link": "Flexbox y Grid",
+      "id": "C05",
       "alink": "Flexbox_Grid.png"
+    },
+    {
+      "alink": "html_desde_cero.png",
+      "id": "C06"
     }
   ]
 }
