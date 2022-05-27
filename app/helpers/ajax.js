@@ -1,12 +1,10 @@
 
 
 export async function ajax(props){
-    let {url,CbSuccess} = props    
-    if(url.includes("habilidad")){
-       
+    let {url,method,CbSuccess,data} = props    
+    if(url.includes("habilidad")){       
         await fetch(url)
-        .then(res => res.ok ? res.text(): Promise.reject(res))
-        
+        .then(res => res.ok ? res.text(): Promise.reject(res))        
         .then(json => {
             CbSuccess(json)        
         })
@@ -20,7 +18,7 @@ export async function ajax(props){
         })
     }else{
         
-        await fetch(url)
+        await fetch(url,props)
         .then(res => res.ok ? res.json(): Promise.reject(res))
         
         .then(json => {

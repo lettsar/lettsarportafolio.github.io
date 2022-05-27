@@ -518,10 +518,12 @@ html {
   background-color: #002b49;
 }
 /*::::::::IMG-LINK::::::::*/
-.PopUp {
-  position: absolute;
 
-  width: 70%;
+.PopUp {
+  display: block;
+  position: absolute;
+  width: 60%;
+
   height: fit-content;
   top: 0px;
   left: 0;
@@ -531,9 +533,14 @@ html {
   background-color: #002b49;
   text-align: center;
 }
+.btn-close{
+  cursor: pointer;
+}
 
 .PopUp img {
-  width: 90%;  
+  width: 80%;  
+  margin-bottom: 20px;
+
 }
 .PopUp div {
   text-align: right;

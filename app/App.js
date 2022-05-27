@@ -4,5 +4,6 @@ import { Router } from "./componentes/Router.js";
 
 export function App(){
     const d = document;
-    Router();       
+    Router();   
+        
 }

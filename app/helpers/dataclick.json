@@ -9,20 +9,24 @@
       "alink": "javascript_desde_cero.png"
     },
     {
-      "id": "C3",
+      "id": "C03",
       "alink": "JavaScript desde Cero_22hrs.png"
     },
     {
       "id": "C04",
-      "alink": "programacion_orientada_objeto.png"
+      "alink": "JavaScript_en_el_Navegador.png"
     },
     {
       "id": "C05",
-      "alink": "Flexbox_Grid.png"
+      "alink": "programacion_orientada_objeto.png"
     },
     {
-      "alink": "html_desde_cero.png",
+      "alink": "css_desde_cero.png",
       "id": "C06"
+    },
+    {
+      "alink": "Flexbox_Grid.png",
+      "id": "C07"
     }
   ]
 }
