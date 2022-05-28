@@ -26,8 +26,8 @@ export const searchClick = e => {
              url:"http://localhost:5555/btn-url-cap",
              CbSuccess: res=>{  
            let dato= res.find(el => el.id ==dt) 
+          loader()
            if(dato){
-          
            $conteiner.appendChild(creaDiv(dato.alink));
             console.log(dato.alink)
          
@@ -39,9 +39,10 @@ export const searchClick = e => {
           
         
       }if(e.target.matches(".btn-close")){
-         loader()
+ 
          $dvPop.remove()
          loaderRemove()
+     
       
        
       }
