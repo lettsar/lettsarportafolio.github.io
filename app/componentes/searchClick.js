@@ -1,4 +1,5 @@
 import { ajax } from "../helpers/ajax.js";
+import { loader, loaderRemove } from "./loader.js";
 
 
 
@@ -38,8 +39,10 @@ export const searchClick = e => {
           
         
       }if(e.target.matches(".btn-close")){
+         loader()
          $dvPop.remove()
-         document.getElementById("imgloader").remove()
+         loaderRemove()
+      
        
       }
    

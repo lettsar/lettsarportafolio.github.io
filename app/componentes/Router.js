@@ -1,5 +1,6 @@
 import{ajax} from '../helpers/ajax.js'
 import { barprogress } from './barProgress.js';
+import { loaderRemove } from './loader.js';
 import { searchClick } from './searchClick.js';
 
 
@@ -9,7 +10,7 @@ const $conteinerapp = d.querySelector(".conteiner-app");
 const $conteinercontent = d.querySelector(".conteiner-content");
 const $root = d.getElementById("root");
 
-const $load = d.querySelector(".imgloader");
+
 
 //Validamos URL para cambiar CSS Grid
 
@@ -53,7 +54,7 @@ export async function Router(props){
             
             }
         })  
-        $load.remove()  
+
 
       
      
@@ -67,7 +68,7 @@ export async function Router(props){
                 $root.innerHTML=res;
             }
         })  
-        $load.remove()  
+      
     }else if(hash==="#/training"){
         
         await   ajax({
@@ -78,7 +79,7 @@ export async function Router(props){
                 $root.innerHTML=res; 
             }
         })
-        $load.remove()  
+     
         
     }else if(hash==="#/frontend"){
         
@@ -90,7 +91,7 @@ export async function Router(props){
                 $root.innerHTML=res;   
             }
         })
-        $load.remove()  
+     
     
     /* $root.appendChild(barprogress(dat)) */
        
@@ -104,7 +105,7 @@ export async function Router(props){
                 $root.innerHTML=res;     
             }
         })
-        $load.remove()     
+    
        
     }else if(hash==="#/gestionti"){
                 
@@ -117,7 +118,7 @@ export async function Router(props){
                 
             }
         })
-        $load.remove()  
+    
   
     }else if(hash==="#/contact"){
         
@@ -129,10 +130,10 @@ export async function Router(props){
                 $root.innerHTML=res;  
             }
         })
-        $load.remove()  
-               
+        
     }
-    console.log("Intentando Nuevamente")
+    
+  loaderRemove()
     
    
    
