@@ -1,8 +1,9 @@
 export function loader(){
-const $loader = document.createElement("img");
-$loader.src="./app/assets/img/loader-lettsar.gif";
-$loader.alt="Cargando";
-$loader.classList.add("loader")
-return $loader;
+const $imgloader = document.createElement("div");
+$imgloader.src="./app/assets/img/loader-lettsar.gif";
+$imgloader.alt="Cargando";
+$imgloader.classList.add("imgloader")
+$imgloader.id="imgloader"
+return $imgloader;
 
 }

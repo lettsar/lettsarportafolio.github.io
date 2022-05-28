@@ -1,6 +1,7 @@
 import { ajax } from "../helpers/ajax.js";
 
 
+
 const $conteiner = document.getElementById("conteiner")
 
 function creaDiv(url){
@@ -25,8 +26,10 @@ export const searchClick = e => {
              CbSuccess: res=>{  
            let dato= res.find(el => el.id ==dt) 
            if(dato){
+          
            $conteiner.appendChild(creaDiv(dato.alink));
             console.log(dato.alink)
+         
            }else{
               console.log(`NO Encontrado ${dt}`)
            }
@@ -35,8 +38,11 @@ export const searchClick = e => {
           
         
       }if(e.target.matches(".btn-close")){
-         $dvPop.remove();
+         $dvPop.remove()
+         document.getElementById("imgloader").remove()
+       
       }
    
+     
    })
    };

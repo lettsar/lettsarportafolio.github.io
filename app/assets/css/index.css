@@ -533,6 +533,10 @@ html {
   background-color: #002b49;
   text-align: center;
 }
+.imgloader{
+  position: absolute;
+  top: 100px
+}
 .btn-close{
   cursor: pointer;
 }
