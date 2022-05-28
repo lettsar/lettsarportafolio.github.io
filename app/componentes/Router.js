@@ -49,7 +49,8 @@ export async function Router(props){
                 
                 console.log(hash)
                 $root.innerHTML=null;
-                $root.innerHTML=res;   
+                $root.innerHTML=res;  
+                loaderRemove() 
             
             
             }
@@ -66,6 +67,7 @@ export async function Router(props){
                 console.log(hash)
                 $root.innerHTML=null;
                 $root.innerHTML=res;
+                loaderRemove()
             }
         })  
       
@@ -77,6 +79,7 @@ export async function Router(props){
                 console.log(hash)
                 $root.innerHTML=null;
                 $root.innerHTML=res; 
+                loaderRemove()
             }
         })
      
@@ -88,7 +91,8 @@ export async function Router(props){
             CbSuccess: res=>{
                 console.log(hash)
                 $root.innerHTML=null;
-                $root.innerHTML=res;   
+                $root.innerHTML=res;  
+                loaderRemove() 
             }
         })
      
@@ -102,7 +106,8 @@ export async function Router(props){
             CbSuccess: res=>{
                 console.log(hash)
                 $root.innerHTML=null;
-                $root.innerHTML=res;     
+                $root.innerHTML=res;    
+                loaderRemove() 
             }
         })
     
@@ -115,6 +120,7 @@ export async function Router(props){
                 console.log(hash)
                 $root.innerHTML=null;
                 $root.innerHTML=res;   
+                loaderRemove()
                 
             }
         })
@@ -128,12 +134,13 @@ export async function Router(props){
                 console.log(hash)
                 $root.innerHTML=null;
                 $root.innerHTML=res;  
+                loaderRemove()
             }
         })
         
     }
     
-  loaderRemove()
+
     
    
    
