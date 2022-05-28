@@ -535,7 +535,8 @@ html {
 }
 .imgloader{
   position: absolute;
-  top: 100px
+  top: 50%;
+  bottom: 50%;
 }
 .btn-close{
   cursor: pointer;

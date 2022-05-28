@@ -17,22 +17,20 @@ $div.innerHTML=`<div>
    return $div;
 }
 
-export const searchClick = e => {        
+export const searchClick =  e => {        
    document.addEventListener("click", e=>{
       const $dvPop = document.getElementById("PopUp");
       if(e.target.matches(".btn-url-clic *")){
+         loader()
          const dt = e.target.parentNode.dataset.link;   
           ajax({
              url:"http://localhost:5555/btn-url-cap",
              CbSuccess: res=>{  
            let dato= res.find(el => el.id ==dt) 
-          loader()
            if(dato){
            $conteiner.appendChild(creaDiv(dato.alink));
-            console.log(dato.alink)
-         
-           }else{
-              console.log(`NO Encontrado ${dt}`)
+            console.log(dato.alink)  
+            loaderRemove()       
            }
            }
           })
@@ -41,7 +39,7 @@ export const searchClick = e => {
       }if(e.target.matches(".btn-close")){
  
          $dvPop.remove()
-         loaderRemove()
+        
      
       
        
