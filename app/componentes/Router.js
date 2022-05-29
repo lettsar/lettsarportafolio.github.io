@@ -41,8 +41,7 @@ export async function Router(props){
 
     searchquery(hash)  
    
-    if(!hash || hash==="#/"|| hash ==" "){     
-        
+    if(!hash || hash==="#/"|| hash ==" "){             
         await ajax({
             url:'app/assets/recursoHtml/habilidad-home.html',
             CbSuccess: res=>{
@@ -55,10 +54,6 @@ export async function Router(props){
             
             }
         })  
-
-
-      
-     
     }else if(hash==="#/experience"){       
         
         await  ajax({
@@ -69,12 +64,10 @@ export async function Router(props){
                 $root.innerHTML=res;
                 loaderRemove()
             }
-        })  
-      
-    }else if(hash==="#/training"){
-        
+        })        
+    }else if(hash==="#/cvprint"){        
         await   ajax({
-            url:'app/assets/recursoHtml/habilidad-capacitaciones.html',
+            url:'app/assets/recursoHtml/cvprint.html',
             CbSuccess: res=>{
                 console.log(hash)
                 $root.innerHTML=null;
@@ -95,12 +88,7 @@ export async function Router(props){
                 loaderRemove() 
             }
         })
-     
-    
-    /* $root.appendChild(barprogress(dat)) */
-       
-    }else if(hash==="#/disenografico"){
-        
+    }else if(hash==="#/disenografico"){        
         await   ajax({
             url:'app/assets/recursoHtml/habilidad-disenografico.html',
             CbSuccess: res=>{
@@ -110,8 +98,6 @@ export async function Router(props){
                 loaderRemove() 
             }
         })
-    
-       
     }else if(hash==="#/gestionti"){
                 
         await   ajax({
@@ -124,8 +110,6 @@ export async function Router(props){
                 
             }
         })
-    
-  
     }else if(hash==="#/contact"){
         
         await   ajax({

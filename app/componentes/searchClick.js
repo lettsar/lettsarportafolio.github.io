@@ -17,7 +17,7 @@ $div.innerHTML=`<div>
    return $div;
 }
 
-export const searchClick =  e => {        
+export const searchClick =    e => {        
    document.addEventListener("click", e=>{
       const $dvPop = document.getElementById("PopUp");
       if(e.target.matches(".btn-url-clic *")){
