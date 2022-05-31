@@ -41,7 +41,7 @@ export async function Router(props){
 
     searchquery(hash)  
    
-    if(!hash || hash==="#/"|| hash ==" "){             
+    if(!hash || hash==="#/" || hash ==" "){             
         await ajax({
             url:'app/assets/recursoHtml/habilidad-home.html',
             CbSuccess: res=>{
@@ -54,8 +54,7 @@ export async function Router(props){
             
             }
         })  
-    }else if(hash==="#/experience"){       
-        
+    }else if(hash==="#/experience"){   
         await  ajax({
             url:'app/assets/recursoHtml/habilidad-experiencia.html',
             CbSuccess: res=>{
@@ -65,18 +64,17 @@ export async function Router(props){
                 loaderRemove()
             }
         })        
-    }else if(hash==="#/cvprint"){        
+    }else if(hash === "#/cvprint"){        
         await   ajax({
-            url:'app/assets/recursoHtml/cvprint.html',
+            url:'app/assets/recursoHtml/habilidad-cvprint.html',
             CbSuccess: res=>{
                 console.log(hash)
                 $root.innerHTML=null;
                 $root.innerHTML=res; 
                 loaderRemove()
+             
             }
-        })
-     
-        
+        })    
     }else if(hash==="#/frontend"){
         
         await   ajax({

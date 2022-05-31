@@ -212,12 +212,19 @@ html {
   border-bottom: solid 2px var(--Title-color);
 }
 .cont_art_cap {
+width: 100%;
+display: flex;
+justify-content: center;
+ 
+  
+}
+.articles{
   width: 80%;
   display: flex; 
   flex-wrap: wrap;
-  
+  justify-content: center;
 }
-.article-cap {
+.articles .article-cap {
   min-width: calc(100% - 50%);
   margin-top: 20px;
   width: calc(100% - 50%);
@@ -226,7 +233,7 @@ html {
   padding-right: 10px;
 }
 
-.article-cap:hover .exp::after {
+.articles .article-cap:hover .exp::after {
   content: "Ver Certificado";
   width: 80%;
   color: #fff;
@@ -235,12 +242,12 @@ html {
   background-color: #002b49;
   border-radius: 0px 10px 10px 0px;
 }
-.article-cap {
+.articles .article-cap {
   text-align: justify;
   line-height: 1.5rem;
   text-align: center;
 }
-.article-cap p {
+.articles .article-cap p {
   text-align: justify;
   line-height: 1.5rem;
   padding: 0px !important;
@@ -488,8 +495,10 @@ html {
   display: flex;
   width: 90%;
   flex-wrap: wrap;
-  justify-content: center;
+ 
 }
+
+
 .progress {
   margin-left: 10px;
   gap: 10px;
@@ -677,6 +686,7 @@ border-radius: 20px;
   }
   .cont_art_cap {
     display: block;
+    width: 100%;
   }
 
   .article-cap {
