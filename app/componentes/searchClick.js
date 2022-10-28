@@ -24,7 +24,7 @@ export const searchClick =    e => {
          loader()
          const dt = e.target.parentNode.dataset.link;   
           ajax({
-             url:"http://localhost:5555/btn-url-cap",
+             url:"https://lettsar.github.io/lettsarportafolio.github.io/app/helpers/dataclick.json",
              CbSuccess: res=>{  
            let dato= res.find(el => el.id ==dt) 
            if(dato){
